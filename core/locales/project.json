@@ -1,0 +1,16 @@
+{
+  "name": "locales",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "core/locales/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["core/locales/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "mock",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "core/mock/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["core/mock/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

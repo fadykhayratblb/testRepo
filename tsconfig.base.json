@@ -1,0 +1,55 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@blue-beetle-web/auth": ["libs/auth/src/index.ts"],
+      "@blue-beetle-web/auth/server": ["libs/auth/src/server.ts"],
+      "@blue-beetle-web/cart": ["libs/cart/src/index.ts"],
+      "@blue-beetle-web/cart/server": ["libs/cart/src/server.ts"],
+      "@blue-beetle-web/components": ["libs/shared/components/src/index.ts"],
+      "@blue-beetle-web/components/server": [
+        "libs/shared/src/components/server.ts"
+      ],
+      "@blue-beetle-web/configurations": ["core/configurations/src/index.ts"],
+      "@blue-beetle-web/configurations/server": [
+        "core/configurations/src/server.ts"
+      ],
+      "@blue-beetle-web/constatnts": ["libs/shared/constants/src/index.ts"],
+      "@blue-beetle-web/constatnts/server": [
+        "libs/shared/constants/src/server.ts"
+      ],
+      "@blue-beetle-web/global-state": [
+        "libs/shared/global-state/src/index.ts"
+      ],
+      "@blue-beetle-web/global-state/server": [
+        "libs/shared/global-state/src/server.ts"
+      ],
+      "@blue-beetle-web/locales": ["core/locales/src/index.ts"],
+      "@blue-beetle-web/locales/server": ["core/locales/src/server.ts"],
+      "@blue-beetle-web/mock": ["core/mock/src/index.ts"],
+      "@blue-beetle-web/mock/server": ["core/mock/src/server.ts"],
+      "@blue-beetle-web/product": ["libs/product/src/index.ts"],
+      "@blue-beetle-web/product/server": ["libs/product/src/server.ts"],
+      "@blue-beetle-web/services": ["core/services/src/index.ts"],
+      "@blue-beetle-web/services/server": ["core/services/src/server.ts"],
+      "@blue-beetle-web/types": ["core/types/src/index.ts"],
+      "@blue-beetle-web/types/server": ["libs/shared/types/src/server.ts"],
+      "@blue-beetle-web/utils": ["libs/shared/utils/src/index.ts"],
+      "@blue-beetle-web/utils/server": ["libs/shared/utils/src/server.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

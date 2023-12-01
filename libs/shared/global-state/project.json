@@ -1,0 +1,16 @@
+{
+  "name": "global-state",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/global-state/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/global-state/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "blue-beetle-web-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/blue-beetle-web-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/blue-beetle-web-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "blue-beetle-web:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "blue-beetle-web:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/blue-beetle-web-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["blue-beetle-web"]
+}
